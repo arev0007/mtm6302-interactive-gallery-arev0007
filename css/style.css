@@ -19,6 +19,10 @@ h1{
 #logo{
     padding:10px;
     margin-top: 10px;
+
+}
+#logo:hover img{
+    transform: scale(1.1);
 }
 /*gallery*/
 
@@ -27,24 +31,19 @@ h1{
     padding: 50px 20px;
     margin: 0 auto;
 }
-/*
 .collection{
     padding: 50px 20px;
     margin: 0 auto;
-}*/
-/*
-.collection{
-    max-width: 100%;
-    border-radius: 10px;
-    position: relative;
-    transition: transform 250ms;
-    cursor: pointer;
-    background-color: black;
-}*/
+}
+
+.collection h1{
+   margin-left: 10px;
+}
 #gallery{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
     grid-gap: 20px;
+    padding: 10px;
 }
 
 .galleryImg{
@@ -54,8 +53,24 @@ h1{
     transition:  transform 250ms;
     cursor: pointer;
     background-color: black;
+    padding: 20px;
+}
+#imagen-13, #imagen-14, #imagen-15{
+    max-width: 100%;
+    border-radius: 10px;
+    position:relative;
+    transition:  transform 250ms;
+    cursor: pointer;
+    background-color: black;
+    padding: 20px;
+
 }
 
+
+#imagen-13:hover, #imagen-14:hover, #imagen-15:hover{
+    transform: translateY(-2px);
+    box-shadow: 5px 5px 10px rgb(68, 118, 199); 
+}
 .galleryImg:hover{
     transform: translateY(-2px);
     box-shadow: 5px 5px 10px rgb(68, 118, 199);
@@ -75,12 +90,15 @@ h1{
     transform: translateY(-100%);
     transition: 250ms transform;
     padding: 60px;
-
+    
 }
 
 #selectedImage{
     max-height: 100% ;
 }
+
+
+
 /*
 .collectionImg:hover{
     transform: translateY(-2px);

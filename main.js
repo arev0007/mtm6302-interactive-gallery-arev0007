@@ -42,17 +42,17 @@ img12.addEventListener('click', () => {
     const img13 = document.createElement('img');
     img13.src = '/css/images/card13.png';
     img13.classList.add('hidden');
-    img13.setAttribute('id', 'imagen-13'); // Agregar id
+    img13.setAttribute('id', 'imagen-13');
     
     const img14 = document.createElement('img');
     img14.src = '/css/images/card14.png';
     img14.classList.add('hidden');
-    img14.setAttribute('id', 'imagen-14'); // Agregar id
+    img14.setAttribute('id', 'imagen-14');
     
     const img15 = document.createElement('img');
     img15.src = '/css/images/card15.png';
     img15.classList.add('hidden');
-    img15.setAttribute('id', 'imagen-15'); // Agregar id
+    img15.setAttribute('id', 'imagen-15');
     
     gallery.appendChild(img13);
     gallery.appendChild(img14);

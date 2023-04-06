@@ -1,32 +1,38 @@
 //get id and create an array
 const gallery = document.getElementById('gallery');
-const pop = document.getElementById('popup');
+const popup = document.getElementById('popup');
+const selectedImage = document.getElementById('selectedImage');
 const pokecard = document.getElementById('pokecard')
 const imageIndexes = [1,2,3,4,5,6,7,8,9,10,11,12];
+const imageExtra= [13, 14,15];
+const more = [12];
 const slectedIndex = null;
-//create images
-imageIndexes.forEach(i => {
+//create images 
+imageIndexes.forEach((i) => {
     const image = document.createElement('img');
     image.src = `/css/images/card${i}.png`;
-    image.classList.add('collectionImg');
-    gallery.appendChild(image);
-
+    image.alt = `Discover your Pokemon`;
+    image.classList.add('galleryImg');
+    
+    //popup stuff
     image.addEventListener('click', () =>{
-        pokecard.src = `/css/images/card${i}.png`;
-    })
-    gallery.appendChild(image);
+        popup.style.transform = `translateY(0)`;
+        selectedImage.src = `/css/images/card${i}.png`;
+        selectedImage.alt = `Discover your Pokemon`;
+    });
 
+    gallery.appendChild(image);
 });
 
+    popup.addEventListener('click', () =>{
+        popup.style.transform = 'translateY(-100%)';
+      
 
 
-const buttton = document.getElementById('button')
-const buttonColor = document.getElementById('buttonColor')
-button.addEventListener('click', function() {
-    button.innerHTML = 
-    `<img class="pokecolor" src="css/images/pokecolor.png" alt="character" />`
-    buttton.classList.add('show')
-  })
-
-
+});
+more.addEventListener('click', () =>{
+    more.classList.add('imageExtra');
   
+
+
+});

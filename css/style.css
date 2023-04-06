@@ -21,33 +21,76 @@ h1{
     margin-top: 10px;
 }
 /*gallery*/
-.collection{
+
+.main-container{
+    max-width: 1600px;
     padding: 50px 20px;
     margin: 0 auto;
 }
-.collectionImg{
+/*
+.collection{
+    padding: 50px 20px;
+    margin: 0 auto;
+}*/
+/*
+.collection{
     max-width: 100%;
     border-radius: 10px;
     position: relative;
     transition: transform 250ms;
     cursor: pointer;
     background-color: black;
-}
+}*/
 #gallery{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
     grid-gap: 20px;
 }
 
+.galleryImg{
+    max-width: 100%;
+    border-radius: 10px;
+    position:relative;
+    transition:  transform 250ms;
+    cursor: pointer;
+    background-color: black;
+}
+
+.galleryImg:hover{
+    transform: translateY(-2px);
+    box-shadow: 5px 5px 10px rgb(68, 118, 199);
+}
+
+
+#popup{
+    position: fixed;
+    top:0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgb(0, 0, 0, 0.95);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: translateY(-100%);
+    transition: 250ms transform;
+    padding: 60px;
+
+}
+
+#selectedImage{
+    max-height: 100% ;
+}
+/*
 .collectionImg:hover{
     transform: translateY(-2px);
     box-shadow: 3px 3px 10px black;
     opacity: 0.5;
 }
 
+*/
 
-
-/* Pokecard*/
+/* Pokecard
 h1{
     padding: 10px;
 }
@@ -169,3 +212,4 @@ h1{
     
 
 }
+*/
